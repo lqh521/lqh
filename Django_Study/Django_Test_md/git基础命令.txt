@@ -1,0 +1,83 @@
+初始化项目
+git init
+查看状态 
+git status
+查看修改前后区别
+git diff XXX
+git diff --staged
+工作区->暂存区
+git add  （.代表所有）
+暂存区->Git Repository(Git 仓库)
+git commit -m "描述信息"
+已提交信息
+git log
+移动，重命名
+git rm   XXX(旧名,旧路径)  xxx(新名,新路径)
+删除
+git -rf  
+git rm -r(删除目录参数) XXX  
+恢复
+git checkout HEAD -- XXX
+恢复到最近的上一次提交的状态
+git checkout HEAD^ -- XXX
+
+  
+F下翻页
+B上翻页
+
+
+
+帮助
+git --help
+显示所有命令
+git help -a
+使用手册
+git help -g
+显示详细用法
+git help XXX
+
+git配置（用户）
+初始化用户和邮箱
+git config --global user.name '用户名'
+git config --global user.email '邮箱'	
+git config --unset --global user.name
+颜色
+git config --global color.ui true
+
+讲本地仓库提交到远程仓库
+git push 
+
+git clone 仓库地址
+
+git config --list
+
+
+无法同步或没有权限
+vi .git/config
+将 
+[remote "origin"]
+    url = http://github.com/用户名/仓库名.git
+修改为
+[remote "origin"]
+    url = http://github.com/用户名:密码@github.com/仓库名.git
+
+
+https://用户名.github.io
+搭建步骤
+1.  创建个人站点 -> 新建仓库（注：仓库名必须是【用户名.github.io】）
+2.  在仓库下创建index.html文件
+3.  github pages 仅支持静态网页
+4.  仓库里只能是.html文件
+
+Project Pages 项目站点
+https://用户名.github.io/仓库名
+搭建步骤
+1.  进入项目主页，点击settings
+2.  在settings页面，点击【Launch automatic page generator】来自动生成主题页面
+3.  选择主题
+4. 生成网页
+
+
+
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
